@@ -12,11 +12,13 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-elegant-gold rounded-lg flex items-center justify-center">
-                <span className="text-true-black font-bold text-lg">T</span>
-              </div>
-              <span className="text-soft-light font-semibold">Tameem</span>
+            <div className="flex items-center space-x-3 group">
+              <img 
+                src="/favicon.png" 
+                alt="Tameem Logo" 
+                className="w-8 h-8 rounded-lg transition-transform duration-200 group-hover:scale-105"
+              />
+              <span className="text-soft-light font-semibold group-hover:text-elegant-gold transition-colors duration-200">Tameem</span>
             </div>
 
             {/* Copyright */}

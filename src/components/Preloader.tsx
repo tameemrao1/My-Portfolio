@@ -39,8 +39,12 @@ const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       <div className="relative text-center space-y-12">
         {/* Elegant Logo */}
         <div className="relative">
-          <div className="text-6xl font-clash font-bold text-elegant-gold mb-4">
-            T
+          <div className="mb-4">
+            <img 
+              src="/favicon.png" 
+              alt="Tameem Logo" 
+              className="w-16 h-16 mx-auto rounded-2xl animate-pulse"
+            />
           </div>
           <div className="text-sm font-geist text-soft-light/60 tracking-[0.3em]">
             TAMEEM RAO

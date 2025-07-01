@@ -53,10 +53,17 @@ const Header: React.FC = () => {
             
             {/* Logo */}
             <div 
-              className="font-clash text-xl font-bold text-soft-light cursor-pointer"
+              className="flex items-center space-x-3 cursor-pointer group"
               onClick={() => handleNavClick('hero')}
             >
-              Tameem.dev
+              <img 
+                src="/favicon.png" 
+                alt="Tameem Logo" 
+                className="w-10 h-10 rounded-lg transition-transform duration-200 group-hover:scale-105"
+              />
+              <span className="font-clash text-xl font-bold text-soft-light group-hover:text-elegant-gold transition-colors duration-200">
+                Tameem
+              </span>
             </div>
 
             {/* Desktop Navigation */}
@@ -153,7 +160,11 @@ const Header: React.FC = () => {
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-space-gray/30">
           <div className="flex items-center space-x-3">
-            <div className="w-2 h-2 bg-elegant-gold rounded-full"></div>
+            <img 
+              src="/favicon.png" 
+              alt="Tameem Logo" 
+              className="w-6 h-6 rounded"
+            />
             <span className="font-clash text-lg font-semibold text-soft-light">Menu</span>
           </div>
           <button
