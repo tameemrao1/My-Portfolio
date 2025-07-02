@@ -13,7 +13,8 @@ const CursorFollower: React.FC = () => {
       setIsTouchDevice(
         'ontouchstart' in window || 
         navigator.maxTouchPoints > 0 || 
-        window.matchMedia('(pointer: coarse)').matches
+        window.matchMedia('(pointer: coarse)').matches ||
+        window.matchMedia('(max-width: 1024px)').matches // Also disable on tablets and below
       );
     };
 

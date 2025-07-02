@@ -58,7 +58,13 @@
 @layer base {
   * {
     @apply border-border;
-    cursor: none;
+  }
+  
+  /* Hide cursor on desktop only */
+  @media (min-width: 1025px) {
+    * {
+      cursor: none;
+    }
   }
 
   body {
@@ -366,12 +372,25 @@
   outline-offset: 2px;
 }
 
-/* Hide default cursor */
-* {
-  cursor: none !important;
+/* Hide default cursor on desktop only */
+@media (min-width: 1025px) {
+  * {
+    cursor: none !important;
+  }
+
+  /* Show pointer for interactive elements */
+  button, a, [role="button"] {
+    cursor: none !important;
+  }
 }
 
-/* Show pointer for interactive elements */
-button, a, [role="button"] {
-  cursor: none !important;
+/* Restore default cursor on mobile and tablet */
+@media (max-width: 1024px) {
+  * {
+    cursor: auto !important;
+  }
+
+  button, a, [role="button"] {
+    cursor: pointer !important;
+  }
 }

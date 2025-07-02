@@ -208,7 +208,7 @@ const ServicesSection: React.FC = () => {
         {/* Work Process Section */}
         <div>
           {/* Header */}
-          <div className="text-center mb-20">
+          <div id='work-process' className="text-center mb-20">
             <div className="inline-flex items-center gap-2 bg-royal-indigo/10 px-6 py-3 rounded-full mb-8 backdrop-blur-sm">
               <CheckCircle size={18} className="text-royal-indigo" />
               <span className="text-sm font-medium text-royal-indigo">Work Process</span>

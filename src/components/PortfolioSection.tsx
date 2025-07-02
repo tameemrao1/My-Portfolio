@@ -36,7 +36,7 @@ const PortfolioSection: React.FC = () => {
     if (techName.includes('next')) {
       return (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M11.5725 0c-.1763 0-.3098.0013-.3584.0067-.0516.0053-.2159.021-.3636.0328-3.4088.3073-6.6017 2.1463-8.624 4.9728C1.1004 6.584.3802 8.3666.1082 10.255c-.0962.659-.108.8537-.108 1.7474s.012 1.0884.108 1.7476c.652 4.506 3.8591 8.2919 8.2087 9.6945.7789.2511 1.6.4223 2.5337.5255.3636.04 1.9354.04 2.299 0 1.6117-.1783 2.9772-.577 4.3237-1.2643.2065-.1056.2464-.1337.2183-.1573-.0188-.0139-.8987-1.1938-1.9543-2.62l-1.919-2.592-2.4047-3.5583c-1.3231-1.9564-2.4117-3.556-2.4211-3.556-.0094-.0026-.0187 1.5787-.0235 3.509-.0067 3.3802-.0093 3.5162-.0516 3.596-.061.115-.108.1618-.2064.2134-.075.0374-.1408.0445-.5429.0445h-.4570l-.0803-.0537-.0802-.0534.0062-5.2902.0067-5.2906.0236-.0802c.0802-.1597.144-.2134.3682-.2134.1604 0 .7978-.1597 1.8616-.4799z"/>
+          <path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/>
         </svg>
       );
     }
@@ -68,7 +68,7 @@ const PortfolioSection: React.FC = () => {
     if (techName.includes('three')) {
       return (
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M.38 0h23.24l-2.87 3.64H2.86L.38 0zm2.48 10.93l-2.1-2.68h15.84l-.6.76-12.44-.01-2.85 3.64H5.9l10.54.01-1.32 1.68H1.57l-.71-.9 1.06-1.34-.96-1.22zm3.5 8.45l-1.98-2.52H19.78l-.54.69H5.64l-.99 1.26H20.16l.78-.99L18.88 24H2.69l1.97-2.52z"/>
+          <path d="M.3 0h23.4l-2.9 3.7H2.9L.3 0zm2.5 11l-2.1-2.7h15.8l-.6.8-12.4-.01-2.9 3.7H5.9l10.5.01-1.3 1.7H1.6l-.7-.9 1.1-1.3-.7-1.3zm3.5 8.4l-2-2.5H19.8l-.5.7H5.6l-1 1.3H20.2l.8-1L18.9 24H2.7l2-2.5z"/>
         </svg>
       );
     }
@@ -85,15 +85,15 @@ const PortfolioSection: React.FC = () => {
     {
       id: 1,
       type: 'AI Powered SaaS',
-      title: 'RepurposePro -AI Powered SaaS.',
+      title: 'RepurposePro - AI Powered SaaS.',
       description: 'An SaaS tool that converts long blog posts into platform-ready short content using AI.',
       tech: ['Next.js', 'TypeScript', 'Supabase', 'TailwindCSS'],
       image: '/rep.png',
       liveUrl: 'https://repurpose-pro.vercel.app',
       problem: 'Creators waste hours repurposing content manually. This tool needed to automate that while preserving tone and brand.',
-      solution: "I developed an AI-powered platform that turns blog posts into short-form content for multiple social platforms. It supports tone advanced customization, content management, AI content score and much more — all from a central dashboard. Built with Next.js and OpenRouter API, it's optimized for speed, scale, and ease of use.",
+      solution: "I developed an AI-powered platform that turns blog posts into short-form content for multiple social platforms. It supports advanced customization, content management, AI content score and much more — all from a central dashboard. Built with Next.js and OpenRouter API, it's optimized for speed, scale, and ease of use.",
       learnings: 'I learned how to integrate powerful AI features while keeping the UX intuitive. Balancing automation, scalability, and simplicity was key to creating real value for creators.',
-      screenshots: ['/rep-dashboard.png', '/rep-editor.png', '/rep-preview.png']
+      screenshots: ['/rep2.png', '/rep4.png', '/rep3.png']
     },
     {
       id: 2,
@@ -106,7 +106,7 @@ const PortfolioSection: React.FC = () => {
       problem: 'Agents and property seekers struggled with outdated, slow, and cluttered platforms. The client needed a fast, responsive UI to handle rich property data with seamless search and filtering.',
       solution: 'I built a fast, responsive frontend using React.js and Tailwind CSS, featuring clean UI, advanced search and filter options, and optimized components for handling rich property data across all devices.',
       learnings: 'Building data-rich UIs taught me how to prioritize structure, reusability, and speed — especially when working with media-heavy content and complex filters.',
-      screenshots: ['/estain-home.png', '/estain-search.png', '/estain-details.png']
+      screenshots: ['/estain2.png', '/estain3.png', '/estain4.png']
     },
     {
       id: 3,
@@ -119,7 +119,7 @@ const PortfolioSection: React.FC = () => {
       problem: 'I needed a portfolio that not only showcased my skills but also provided an engaging user experience to leave a lasting impression on visitors.',
       solution: 'I created a visually striking portfolio using React and Three.js, featuring smooth animations, interactive elements, and a clean layout that highlights my projects and skills effectively.',
       learnings: 'This project taught me how to balance aesthetics with performance, ensuring that even complex animations and interactions remain smooth and engaging without compromising load times.',
-      screenshots: ['/portfolio-hero.png', '/portfolio-projects.png', '/portfolio-contact.png']
+      screenshots: ['/portfolio2.png', '/portfolio3.png', '/portfolio4.png']
     }
   ];
 
@@ -194,13 +194,25 @@ const PortfolioSection: React.FC = () => {
 
                     {/* Project Image */}
                     <div className="relative sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-6">
-                      <div className="relative w-full h-full overflow-hidden rounded-xl bg-space-gray/50">
+                      <div className="relative w-full h-full overflow-hidden rounded-xl bg-space-gray/50 group">
                         <img 
                           src={project.image} 
                           alt={project.title}
-                          className="w-full h-full object-cover object-top hover:object-center transition-all duration-500"
-                          style={{ minWidth: '100%', minHeight: '100%' }}
+                          className="w-full h-auto min-h-full object-cover object-top transition-all duration-700 ease-out group-hover:-translate-y-4"
+                          style={{ 
+                            objectPosition: 'center top',
+                            transform: 'translateX(-50%)',
+                            left: '50%',
+                            position: 'relative'
+                          }}
                         />
+                        
+                        {/* Preview Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-true-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-4">
+                          <div className="bg-elegant-gold/20 backdrop-blur-sm border border-elegant-gold/30 text-elegant-gold px-3 py-1.5 rounded-full text-xs font-semibold">
+                            🔍 Preview
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -263,38 +275,74 @@ const PortfolioSection: React.FC = () => {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header with Drag Handle */}
-            <div className="sticky top-0 bg-space-gray/95 backdrop-blur-xl border-b border-space-gray/20 rounded-t-3xl">
+            <div className="sticky top-0 bg-space-gray/98 backdrop-blur-xl border-b border-space-gray/20 rounded-t-3xl z-20 shadow-lg">
               {/* Drag Handle */}
               <div className="flex justify-center pt-3 pb-2">
                 <div className="w-12 h-1 bg-muted-silver/40 rounded-full"></div>
               </div>
               
-              <div className="px-6 pb-4 flex items-center justify-between">
+              <div className="px-6 pb-4 relative">
+                {/* Close Button */}
+                <button
+                  onClick={closeCaseStudy}
+                  className="absolute top-0 right-6 w-8 h-8 bg-space-gray/80 hover:bg-space-gray border border-space-gray/40 hover:border-muted-silver/40 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105"
+                  aria-label="Close modal"
+                >
+                  <X size={16} className="text-muted-silver hover:text-soft-light transition-colors" />
+                </button>
+                
                 <div>
-                  <h2 className="text-2xl font-clash font-bold text-soft-light">
+                  <h2 className="text-2xl font-clash font-bold text-soft-light pr-10">
                     {selectedProject.title}
                   </h2>
                   <p className="text-muted-silver">{selectedProject.type} Project</p>
                 </div>
-                <button 
-                  onClick={closeCaseStudy}
-                  className="p-3 hover:bg-true-black/50 rounded-xl transition-all duration-200 group"
-                >
-                  <X size={20} className="text-muted-silver group-hover:text-soft-light transition-colors" />
-                </button>
               </div>
             </div>
 
             {/* Modal Content */}
-            <div className="p-6 space-y-8">
+            <div className="p-6 space-y-8 relative z-10">
               
               {/* Project Preview */}
-              <div className="rounded-2xl overflow-hidden border border-space-gray/20 group">
+              <div 
+                className="rounded-2xl overflow-hidden border border-space-gray/20 group cursor-pointer relative"
+                onClick={() => {
+                  const newWindow = window.open('', '_blank');
+                  if (newWindow) {
+                    newWindow.document.write(`
+                      <html>
+                        <head>
+                          <title>${selectedProject.title} - Main Preview</title>
+                          <style>
+                            body { margin:0; padding:0; background:#000; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+                            img { max-width:95%; max-height:95%; object-fit:contain; border-radius:8px; }
+                          </style>
+                        </head>
+                        <body>
+                          <img src="${selectedProject.image}" alt="${selectedProject.title}" />
+                        </body>
+                      </html>
+                    `);
+                  }
+                }}
+              >
                 <img 
                   src={selectedProject.image} 
                   alt={selectedProject.title}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-64 object-cover object-top transition-all duration-700 ease-out group-hover:-translate-y-6"
+                  style={{ 
+                    objectPosition: 'center top',
+                    minHeight: '100%'
+                  }}
                 />
+                
+                {/* Preview Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-true-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-6">
+                  <div className="bg-elegant-gold/20 backdrop-blur-sm border border-elegant-gold/30 text-elegant-gold px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                    <ExternalLink size={16} />
+                    Click to Preview Full Image
+                  </div>
+                </div>
               </div>
 
               {/* Problem & Solution Grid */}
@@ -355,23 +403,92 @@ const PortfolioSection: React.FC = () => {
                 </p>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              {/* CTA Button */}
+              <div className="flex justify-center pt-6">
                 <a 
                   href={selectedProject.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 bg-gradient-to-r from-elegant-gold to-elegant-gold/80 hover:from-elegant-gold/90 hover:to-elegant-gold/70 text-true-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-elegant-gold to-elegant-gold/80 hover:from-elegant-gold/90 hover:to-elegant-gold/70 text-true-black font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105"
                 >
                   <span>Visit Live Project</span>
                   <ExternalLink size={18} />
                 </a>
-                <button 
-                  onClick={closeCaseStudy}
-                  className="flex-1 sm:flex-none inline-flex items-center justify-center gap-3 bg-space-gray/50 hover:bg-space-gray/70 text-soft-light font-semibold px-8 py-4 rounded-xl transition-all duration-300 border border-space-gray/30 hover:border-space-gray/50"
-                >
-                  Close
-                </button>
+              </div>
+
+              {/* Project Screenshots */}
+              <div className="space-y-6 pt-8">
+                <h3 className="text-xl font-clash font-semibold text-soft-light">
+                  Project Screenshots
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {selectedProject.screenshots.map((screenshot, index) => (
+                    <div 
+                      key={index}
+                      className="rounded-xl overflow-hidden border border-space-gray/20 group cursor-pointer hover:border-elegant-gold/40 transition-all duration-300 relative bg-space-gray/10"
+                      onClick={() => {
+                        const newWindow = window.open('', '_blank');
+                        if (newWindow) {
+                          newWindow.document.write(`
+                            <html>
+                              <head>
+                                <title>${selectedProject.title} - Screenshot ${index + 1}</title>
+                                <style>
+                                  body { 
+                                    margin:0; 
+                                    padding:20px; 
+                                    background:#000; 
+                                    display:flex; 
+                                    justify-content:center; 
+                                    align-items:center; 
+                                    min-height:100vh; 
+                                  }
+                                  img { 
+                                    max-width:95%; 
+                                    max-height:95%; 
+                                    object-fit:contain; 
+                                    border-radius:8px; 
+                                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                                  }
+                                </style>
+                              </head>
+                              <body>
+                                <img src="${screenshot}" alt="${selectedProject.title} - Screenshot ${index + 1}" />
+                              </body>
+                            </html>
+                          `);
+                        }
+                      }}
+                    >
+                      <div className="relative h-56 overflow-hidden">
+                        <img 
+                          src={screenshot}
+                          alt={`${selectedProject.title} screenshot ${index + 1}`}
+                          className="w-full h-auto min-h-full object-cover object-top transition-all duration-700 ease-out group-hover:-translate-y-8"
+                          style={{ 
+                            objectPosition: 'center top',
+                            transform: 'translateX(-50%)',
+                            left: '50%',
+                            position: 'relative'
+                          }}
+                        />
+                      </div>
+                      
+                      {/* Preview Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-true-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-4 px-4">
+                        <div className="bg-elegant-gold/20 backdrop-blur-sm border border-elegant-gold/30 text-elegant-gold px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-2">
+                          <ExternalLink size={14} />
+                          Full Preview
+                        </div>
+                      </div>
+                      
+                      {/* Screenshot Number Badge */}
+                      <div className="absolute top-3 right-3 bg-true-black/70 backdrop-blur-sm text-soft-light px-2 py-1 rounded-full text-xs font-medium">
+                        {index + 1}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

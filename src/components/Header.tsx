@@ -8,13 +8,14 @@ const Header: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const navigationItems = [
-    { id: 'hero', label: 'Home', description: '	Start here' },
-    { id: 'about', label: 'About', description: 'Who I am. ' },
-    { id: 'services', label: 'Services', description: 'What I offer' },
-    { id: 'portfolio', label: 'Portfolio', description: 'My Featured Projects' },
-    { id: 'testimonials', label: 'Testimonials', description: 'What others say about me' },
-    { id: 'contact', label: 'Contact', description: 'Get in touch' },
-  ];
+  { id: 'hero', label: 'Home', description: 'Start here' },
+  { id: 'about', label: 'About', description: 'Who I am' },
+  { id: 'services', label: 'Services', description: 'What I offer' },
+  { id: 'work-process', label: 'Work Process', description: 'How I work' }, // Shorter label = cleaner nav
+  { id: 'portfolio', label: 'Portfolio', description: 'Featured projects' }, // Slightly shorter
+  { id: 'contact', label: 'Contact', description: 'Let’s talk' } // More inviting tone
+];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -153,12 +154,12 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu Panel */}
       <div 
-        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-space-gray/95 backdrop-blur-2xl z-50 transform transition-all duration-500 ease-out md:hidden ${
+        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-space-gray/95 backdrop-blur-2xl z-50 transform transition-all duration-500 ease-out md:hidden flex flex-col ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-space-gray/30">
+        {/* Header - Fixed */}
+        <div className="flex items-center justify-between p-6 border-b border-space-gray/30 flex-shrink-0">
           <div className="flex items-center space-x-3">
             <img 
               src="/favicon.png" 
@@ -175,36 +176,38 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Navigation Items */}
-        <div className="p-6 space-y-2">
-          {navigationItems.map((item, index) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavClick(item.id)}
-              className={`w-full group text-left p-4 rounded-2xl transition-all duration-300 hover:bg-space-gray/40 hover:scale-[1.02] ${
-                isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
-              }`}
-              style={{ 
-                transitionDelay: isMobileMenuOpen ? `${index * 80}ms` : '0ms'
-              }}
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-soft-light font-medium text-lg group-hover:text-elegant-gold transition-colors duration-200">
-                    {item.label}
+        {/* Navigation Items - Scrollable */}
+        <div className="flex-1 overflow-y-auto overflow-x-hidden">
+          <div className="p-6 space-y-2 min-h-full">
+            {navigationItems.map((item, index) => (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className={`w-full group text-left p-4 rounded-2xl transition-all duration-300 hover:bg-space-gray/40 hover:scale-[1.02] ${
+                  isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+                }`}
+                style={{ 
+                  transitionDelay: isMobileMenuOpen ? `${index * 80}ms` : '0ms'
+                }}
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="text-soft-light font-medium text-lg group-hover:text-elegant-gold transition-colors duration-200">
+                      {item.label}
+                    </div>
+                    <div className="text-muted-silver text-sm mt-1 group-hover:text-soft-light/70 transition-colors duration-200">
+                      {item.description}
+                    </div>
                   </div>
-                  <div className="text-muted-silver text-sm mt-1 group-hover:text-soft-light/70 transition-colors duration-200">
-                    {item.description}
-                  </div>
+                  <div className="w-1.5 h-1.5 bg-muted-silver/40 rounded-full group-hover:bg-elegant-gold transition-colors duration-200"></div>
                 </div>
-                <div className="w-1.5 h-1.5 bg-muted-silver/40 rounded-full group-hover:bg-elegant-gold transition-colors duration-200"></div>
-              </div>
-            </button>
-          ))}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-space-gray/30">
+        {/* CTA Section - Fixed */}
+        <div className="p-6 border-t border-space-gray/30 flex-shrink-0">
           <button 
             onClick={() => handleNavClick('contact')}
             className={`w-full bg-elegant-gold hover:bg-elegant-gold/90 text-true-black font-semibold py-4 px-6 rounded-2xl transition-all duration-300 hover:scale-[1.02] ${

@@ -33,8 +33,22 @@ const AboutSection: React.FC = () => {
 </p>
 
 
-
-
+              {/* Tech Stack */}
+              <div className="space-y-6 mt-8">
+                <h3 className="text-lg font-semibold text-soft-light font-geist">
+                  Technologies I work with:
+                </h3>
+                <div className="flex flex-wrap gap-3 justify-center">
+                  {['Next.js', 'TypeScript', 'Tailwind CSS', 'React.js', 'Supabase', 'Firebase', 'Three.js'].map((tech) => (
+                    <span 
+                      key={tech}
+                      className="bg-gradient-to-r from-elegant-gold/10 to-royal-indigo/10 text-soft-light px-4 py-2 rounded-xl font-medium border border-elegant-gold/20 hover:border-elegant-gold/40 transition-all duration-300 hover:bg-elegant-gold/5"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
