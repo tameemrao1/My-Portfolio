@@ -103,7 +103,7 @@ MVPs, dashboards, and business sites — designed to launch faster, convert bett
           {/* Social Proof */}
           <div className="flex items-center justify-center gap-12 text-muted-silver mb-20">
             {[
-              { label: 'Years Experience', value: '3+' },
+              { label: 'Years Experience', value: '2+' },
               { label: 'Projects Completed', value: '50+' },
               { label: 'Client Satisfaction', value: '100%' }
             ].map((stat, index) => (
