@@ -31,20 +31,20 @@ const Footer: React.FC = () => {
             {/* Social Icons */}
             <div className="flex items-center space-x-4">
               <a 
-                href="#" 
+                href="https://github.com/tameemrao1" 
                 className="text-muted-silver hover:text-elegant-gold transition-colors duration-300 p-2"
                 aria-label="GitHub"
               >
                 <Github size={18} />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/tameemrao" 
                 className="text-muted-silver hover:text-elegant-gold transition-colors duration-300 p-2"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
-              <a 
+              {/* <a 
                 href="#" 
                 className="text-muted-silver hover:text-elegant-gold transition-colors duration-300 p-2"
                 aria-label="X (Twitter)"
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                 <svg className="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
-              </a>
+              </a> */}
               <a 
                 href="#" 
                 className="text-muted-silver hover:text-elegant-gold transition-colors duration-300 p-2"

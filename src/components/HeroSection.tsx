@@ -96,7 +96,7 @@ MVPs, dashboards, and business sites — designed to launch faster, convert bett
               onClick={handleContact}
               className="bg-space-gray/50 hover:bg-space-gray/70 text-soft-light font-semibold px-10 py-4 rounded-xl transition-all duration-300 backdrop-blur-sm border border-space-gray/30 hover:border-elegant-gold/30 transform hover:scale-105 font-clash"
             >
-              Let's Talk
+              Contact
             </button>
           </div>
 

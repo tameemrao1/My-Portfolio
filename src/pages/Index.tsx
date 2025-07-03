@@ -31,7 +31,7 @@ const Index = () => {
   };
 
   const handleLinkedInRedirect = () => {
-    window.open('https://linkedin.com/in/yourprofile', '_blank', 'noopener,noreferrer');
+    window.open('https://linkedin.com/in/tameemrao', '_blank', 'noopener,noreferrer');
   };
 
   const handleFiverrRedirect = () => {
