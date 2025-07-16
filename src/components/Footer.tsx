@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a> */}
               <a 
-                href="#" 
+                href="https://www.fiverr.com/tameemrao1" 
                 className="text-muted-silver hover:text-elegant-gold transition-colors duration-300 p-2"
                 aria-label="Fiverr"
               >
