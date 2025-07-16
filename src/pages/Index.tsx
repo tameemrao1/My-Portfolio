@@ -35,7 +35,7 @@ const Index = () => {
   };
 
   const handleFiverrRedirect = () => {
-    window.open('https://fiverr.com/yourprofile', '_blank', 'noopener,noreferrer');
+    window.open('https://www.fiverr.com/tameemrao1', '_blank', 'noopener,noreferrer');
   };
 
   if (isLoading) {
